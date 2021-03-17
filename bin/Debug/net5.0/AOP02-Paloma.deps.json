@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "AOP02-Paloma/1.0.0": {
+        "runtime": {
+          "AOP02-Paloma.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AOP02-Paloma/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

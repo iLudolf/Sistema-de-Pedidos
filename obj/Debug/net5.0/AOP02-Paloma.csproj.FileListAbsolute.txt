@@ -1,0 +1,32 @@
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.exe
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.deps.json
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.runtimeconfig.json
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.runtimeconfig.dev.json
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.dll
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\ref\AOP02-Paloma.dll
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.pdb
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.csprojAssemblyReference.cache
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.AssemblyInfoInputs.cache
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.AssemblyInfo.cs
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.csproj.CoreCompileInputs.cache
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.dll
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\ref\AOP02-Paloma.dll
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.pdb
+C:\Users\israel.laureth\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.genruntimeconfig.cache
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.csprojAssemblyReference.cache
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.GeneratedMSBuildEditorConfig.editorconfig
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.AssemblyInfoInputs.cache
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.AssemblyInfo.cs
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.csproj.CoreCompileInputs.cache
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.dll
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\ref\AOP02-Paloma.dll
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.pdb
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.exe
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.deps.json
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.runtimeconfig.json
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.runtimeconfig.dev.json
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.dll
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\ref\AOP02-Paloma.dll
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\bin\Debug\net5.0\AOP02-Paloma.pdb
+D:\ISRAEL LUDOLF\OneDrive\DEPLOY\AOP02-C#\AOP02-Paloma\obj\Debug\net5.0\AOP02-Paloma.genruntimeconfig.cache
