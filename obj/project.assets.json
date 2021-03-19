@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\israel.laureth\\.nuget\\packages\\": {}
+    "C:\\Users\\Israel Ludolf\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\israel.laureth\\OneDrive\\DEPLOY\\AOP02-C#\\AOP02-Paloma\\AOP02-Paloma.csproj",
+      "projectUniqueName": "D:\\ISRAEL LUDOLF\\OneDrive\\DEPLOY\\AOP02-C#\\AOP02-Paloma\\AOP02-Paloma.csproj",
       "projectName": "AOP02-Paloma",
-      "projectPath": "C:\\Users\\israel.laureth\\OneDrive\\DEPLOY\\AOP02-C#\\AOP02-Paloma\\AOP02-Paloma.csproj",
-      "packagesPath": "C:\\Users\\israel.laureth\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\israel.laureth\\OneDrive\\DEPLOY\\AOP02-C#\\AOP02-Paloma\\obj\\",
+      "projectPath": "D:\\ISRAEL LUDOLF\\OneDrive\\DEPLOY\\AOP02-C#\\AOP02-Paloma\\AOP02-Paloma.csproj",
+      "packagesPath": "C:\\Users\\Israel Ludolf\\.nuget\\packages\\",
+      "outputPath": "D:\\ISRAEL LUDOLF\\OneDrive\\DEPLOY\\AOP02-C#\\AOP02-Paloma\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\israel.laureth\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Israel Ludolf\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

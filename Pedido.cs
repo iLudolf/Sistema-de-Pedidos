@@ -42,8 +42,8 @@ namespace AOP02_Paloma.Pedido
         return valorDoProduto;
     }
 
-      public void setDescricaoDoProduto (float valordoproduto) {
-        valorDoProduto = valordoproduto;
+      public void setDescricaoDoProduto (string descricaodoproduto) {
+        descricaoDoProduto = descricaodoproduto;
     }
 
    public string getDescricaoDoProduto()  {
