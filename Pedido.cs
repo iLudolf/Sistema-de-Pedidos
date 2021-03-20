@@ -2,15 +2,17 @@ using System;
 
 namespace AOP02_Paloma.Pedido
 {
- public class Pedidos{
+ public class Pedidos {
             
+        private string nome = "";    
         private int pedidoID = 0; 
         private DateTime dataEmissao = new DateTime();
         // private float dataEmissao = 0;  
         private float valorDoProduto = 0;  
         private string descricaoDoProduto = " ";
 
-  public Pedidos(int pedidoid, DateTime dataemissao, float valordoproduto, string descricaodoproduto){
+  public Pedidos(string nome, int pedidoid, DateTime dataemissao, float valordoproduto, string descricaodoproduto){
+        this.nome = nome;
         this.pedidoID = pedidoid;
         this.dataEmissao = dataemissao;
         this.valorDoProduto = valordoproduto;
@@ -20,6 +22,15 @@ namespace AOP02_Paloma.Pedido
 //   public void setPedidoID (int pedidoid) {
 //         pedidoID = pedidoid;
 //     }
+
+public string getNome()
+    {
+        return nome;
+    }
+
+         public void setnome (string nome01) {
+         nome = nome01;
+    }
 
    public int getPedidoID()
     {
@@ -53,7 +64,6 @@ namespace AOP02_Paloma.Pedido
 
 
     public float calcularPrecoTotal(){       
-       
             return this.valorDoProduto;     
     }
 
