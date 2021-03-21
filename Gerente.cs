@@ -4,9 +4,13 @@ namespace AOP02_Paloma.Gerentes{
 
     //Class Gerente herda ":" da class funcionario 
     public  class Gerente : Funcionario {
-    private string senha = "";
+    private string senha = "gerente";
     
-    public string getSenha(){
+    public Gerente()  : base (Funcionario.nome, Funcionario.matricula ) {
+
+    }
+
+    public string getSenha() {
         return senha;
     }
 

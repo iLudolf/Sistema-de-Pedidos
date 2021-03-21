@@ -10,8 +10,7 @@ namespace AOP02_Paloma{
     
 class Loja{
 
-
-  static List<Pedidos> listaPedidos = new List<Pedidos>();     
+  static List<Pedidos> listaPedidos = new List<Pedidos>();   
   static Gerente gerente = new Gerente();
   static Estagiario estagiario = new Estagiario();
 static void Main(string[] args){
@@ -28,6 +27,212 @@ static void Main(string[] args){
                       "#                                                            #\n"+  
                       "##############################################################\n\n"
                    );
+
+    
+
+
+bool aux = true; 
+while (aux) //Enquanto test for igual a true, faça isso: 
+{ 
+
+try{
+
+    Console.Write("\n###############################################################\n"+
+                      "#                                                             #\n"+     
+                      "#                   Sistema de Pedidos   V1                   #\n"+                      
+                      "#                                                             #\n"+
+                      "###############################################################\n"+
+                      "#                                                             #\n"+ 
+                      "#                   Insira a opção desejada                   #\n"+
+                      "#                                                             #\n"+ 
+                      "#  1 - Entrar                                                 #\n"+   
+                      "#  2 - Criar uma conta                                        #\n"+  
+                      "#  3 - Sair                                                   #\n"+  
+                      "#                                                             #\n"+                 
+                      "#                                  Data: "+dateAtual()+"           #\n"+   
+                      "#                                                             #\n"+                    
+                      "###############################################################\n\n"+
+
+                      "=> "          
+                      
+                   ); 
+
+                   
+    int caseSwitch = Int32.Parse(Console.ReadLine()); 
+
+       //Estrura do Menu switch    
+      switch (caseSwitch){
+
+        case 1: //Entrar    
+        
+        Console.Write("\n###############################################################\n"+
+                      "#                                                             #\n"+     
+                      "#                   Sistema de Pedidos   V1                   #\n"+                      
+                      "#                                                             #\n"+
+                      "###############################################################\n"+
+                      "#                                                             #\n"+ 
+                      "#                   Insira a opção desejada                   #\n"+
+                      "#                                                             #\n"+ 
+                      "#  1 - Acesso - Gerente                                       #\n"+   
+                      "#  2 - Acesso - Estagiario                                    #\n"+  
+                      "#  3 - Sair                                                   #\n"+  
+                      "#                                                             #\n"+                 
+                      "#                                  Data: "+dateAtual()+"           #\n"+   
+                      "#                                                             #\n"+                    
+                      "###############################################################\n\n"+
+
+                      "=> " ); 
+                    int submenu = Int32.Parse(Console.ReadLine()); 
+                    
+                       switch (submenu){
+                           case 1:
+                              Console.WriteLine(" ");
+                              Console.Write("Informe sua matricula: \n=> "); 
+                              int matricula = Int32.Parse(Console.ReadLine());  
+
+                              Console.WriteLine(" ");
+                              Console.Write("Informe sua senha: "+gerente.getNome()+ "\n=> "); 
+                              string senhaGerente = Console.ReadLine(); 
+
+                              if (  (gerente.getMatricula() == matricula) && (gerente.getSenha().Equals(senhaGerente))){
+                                 Console.WriteLine("\nBem-vindo! - "+gerente.getNome()); 
+                                 subMenu(matricula);
+                              } else{
+                                  Console.WriteLine("Usuarios ou senha incorretos! Tente novamente por gentileza"); 
+                              }
+
+                           break; 
+                           case 2:
+
+                              Console.WriteLine(" ");
+                              Console.Write("Informe sua matricula: \n=> "); 
+                              int matriculaEs = Int32.Parse(Console.ReadLine());  
+
+                              
+                              if (  (gerente.getMatricula() == matriculaEs)){
+                                 Console.WriteLine("\nBem-vindo! - Estagiario " + estagiario.getNome()); 
+                                 subMenu(matriculaEs);
+                              } else{
+                                  Console.WriteLine("Usuarios ou senha incorretos! Tente novamente por gentileza"); 
+                              }
+
+                           break; 
+                           default:
+                           break; 
+                        };       
+        
+               
+          break;
+          case 2://Criar conta   
+      
+        Console.Write("\n###############################################################\n"+
+                      "#                                                             #\n"+     
+                      "#                   Sistema de Pedidos   V1                   #\n"+                      
+                      "#                                                             #\n"+
+                      "###############################################################\n"+
+                      "#                                                             #\n"+ 
+                      "#          Informe o tipo de conta que será criada            #\n"+
+                      "#                                                             #\n"+ 
+                      "#  1 - Perfil - Gerente                                       #\n"+   
+                      "#  2 - Perfil - Estagiario                                    #\n"+  
+                      "#  3 - Sair                                                   #\n"+  
+                      "#                                                             #\n"+                 
+                      "#                                  Data: "+dateAtual()+"           #\n"+   
+                      "#                                                             #\n"+                    
+                      "###############################################################\n\n"+
+
+                      "=> " ); 
+               int typeUsers =  Int32.Parse(Console.ReadLine()); 
+
+               //Criar usuarios
+               switch (typeUsers){
+
+                  case 1: ////Criar conta Gerente   
+                              Console.WriteLine(" ");
+                              Console.Write("Informe seu nome de usuario: \n=> "); 
+                              string nome = Console.ReadLine(); 
+
+                              Console.WriteLine(" ");
+                              Console.Write("Informe sua senha: \n=> "); 
+                              string senha = Console.ReadLine(); 
+
+                             //Criar usuarios Gerente
+                             gerente.setSenha(senha);
+                             gerente.setNome(nome);   
+                             gerente.setMatricula(createID());    
+
+                               Console.WriteLine(" ");                             
+                               Console.WriteLine("\n------------------------------------------------------------\n"+                                  
+                                                    "# Usuario Criado em: "+dateAtual()+"                        \n"+                              
+                                                    "------------------------------------------------------------\n"+ 
+                                                    "# Matricula: "+gerente.getMatricula()+"                                \n"+                               
+                                                    "# Nome: "+gerente.getNome()+"                  \n"+
+                                                    "# Senha: "+gerente.getSenha()+"           \n"+                                                                            
+                                                    "------------------------------------------------------------\n"); 
+
+
+                  break;
+                  case 2: //Criar conta estagiario    
+                              Console.WriteLine(" ");
+                              Console.Write("Informe seu nome de usuario: \n=> "); 
+                              string nomeEst = Console.ReadLine(); 
+
+                              estagiario.setNome(nomeEst); 
+
+                              Console.WriteLine(" ");                             
+                              Console.WriteLine("\n------------------------------------------------------------\n"+                                  
+                                                    "# Usuario Criado em: "+dateAtual()+"                        \n"+                              
+                                                    "------------------------------------------------------------\n"+ 
+                                                    "# Matricula: "+estagiario.getMatricula()+"                                \n"+                               
+                                                    "# Nome: "+estagiario.getNome()+"                  \n"+                                                                                                                          
+                                                    "------------------------------------------------------------\n"); 
+
+                  break;
+
+         }
+                        
+
+                             
+
+
+                                      
+          break;       
+          default:
+               Console.Clear();
+               Console.WriteLine("\n.\n");
+               Console.WriteLine("\n##############################################################\n"+
+                                   "#                                                            #\n"+     
+                                   "#                  Encerrando programa...                    #\n"+
+                                   "#                                                            #\n"+     
+                                   "##############################################################\n");  
+              aux = false;
+              break;
+        }//Fim da Estrura do Menu switch
+
+   
+     
+  
+   }catch (Exception e){
+       Console.WriteLine(e.Message);
+      }  //Catch  
+
+}   //Fim do while
+
+
+
+
+
+}// Fim Main
+
+
+static void subMenu(int parametro){
+
+int valor = parametro; 
+Console.Write("TESTANDO PARAMETRO: "+ valor);
+Console.Write("estagiario: "+ estagiario.getMatricula());
+Console.Write("gerente: "+ gerente.getMatricula());
+
+
 bool aux = true; 
 while (aux) //Enquanto test for igual a true, faça isso: 
 { 
@@ -43,12 +248,12 @@ try{
                       "#                                                             #\n"+ 
                       "#                   Insira a opção desejada                   #\n"+
                       "#                                                             #\n"+ 
-                      "#  1 - Exibir todos os pedidos                                #\n"+   
+                      "#  1 - Exibir todos os Pedidos                                #\n"+   
                       "#  2 - Inserir Pedido                                         #\n"+  
-                      "#  3 - Pesquisar pedido                                       #\n"+  
-                      "#  4 - Excluir pedido                                         #\n"+ 
+                      "#  3 - Pesquisar Pedido                                       #\n"+  
+                      "#  4 - Excluir Pedido                                         #\n"+ 
                       "#  5 - Alterar Pedido                                         #\n"+  
-                      "#  6 - Criar usuario                                          #\n"+  
+                      "#  6 - Aplicar Desconto                                       #\n"+  
                       "#  7 - Sair                                                   #\n"+ 
                       "#                                                             #\n"+                 
                       "#                                  Data: "+dateAtual()+"           #\n"+   
@@ -67,7 +272,7 @@ try{
       switch (caseSwitch){
 
           case 1: // consultar Pedidos  
-
+Console.Write("TESTANDO PARAMETRO: "+ valor);
          //Verificar se a lista esta vazia
           if(listaPedidos.Count == 0){
                msgListVazia();
@@ -99,24 +304,105 @@ try{
           }else {
              alterarPedido(); }   
           break;
-           case 6:   //Criar usuario
+           case 6:   //Calcular Desconto 
+               if(listaPedidos.Count == 0){
+               msgListVazia();
+          
+          }else {
+            //  float valoresPedidos =  calcularPedido();
+
+             if(valor == gerente.getMatricula()){
+               
+                      
+
+               foreach (Pedidos element01 in listaPedidos){
+              
+               
+             
+
+               int posicao = pesquisarRegistros(element01.getPedidoID()); //Pegar indice do pedido, passando ID         
+ 
+               float valorAtual = listaPedidos[posicao].getValorDoProduto(); 
+
+               double percentualGerente = (valorAtual - (0.3 * valorAtual)); // 30% de desconto em todos os pedidos   
+
+               float valorFinal = (float) percentualGerente ;
+               
+
+              
+               listaPedidos[posicao].setValorDoProduto(valorFinal); //Alterar valor do pedido 
+
+                  Console.WriteLine("\n------------------------------------------------------------\n"+                                  
+                                   "# Pedido nº: "+element01.getPedidoID()+"                        \n"+                              
+                                   "------------------------------------------------------------\n"+ 
+                                   "# Nome: "+element01.getNome()+"                                \n"+                               
+                                   "# Data Emissão: "+element01.getDataEmissao()+"                  \n"+
+                                   "# Valor do Produto: "+element01.getValorDoProduto()+"           \n"+
+                                   "# Descriçao do Produto: "+element01.getDescricaoDoProduto()+"   \n"+
+				                       "#------------------------------------------------------------\n"+ 
+                                   "# Desconto: "+(valorAtual- percentualGerente)+"                  \n"+ 
+                                   "# Valor Total com desconto: "+element01.getValorDoProduto()+"                  \n"+                                
+                                   "------------------------------------------------------------\n"); 
+                                    } // Exibir Pedidos com o descontoa atulizado
+
+
+             } 
+             
+             if(valor == estagiario.getMatricula()){
+
+                       
+
+               foreach (Pedidos element02 in listaPedidos){
+
+               int posicao = pesquisarRegistros(element02.getPedidoID()); //Pegar indice do pedido, passando ID         
+ 
+               float valorAtual = listaPedidos[posicao].getValorDoProduto(); //Pegar o valor atual 
+
+               double percentualGerente = (valorAtual - (0.05 * valorAtual)); // 5% de desconto em todos os pedidos   
+
+               float valorFinal = (float) percentualGerente ; //Converter o valor de double para float
+               
+             
+               listaPedidos[posicao].setValorDoProduto(valorFinal); //Alterar valor do pedido 
+
+               Console.WriteLine("\n------------------------------------------------------------\n"+                                  
+                                   "# Pedido nº: "+element02.getPedidoID()+"                        \n"+                              
+                                   "------------------------------------------------------------\n"+ 
+                                   "# Nome: "+element02.getNome()+"                                \n"+                               
+                                   "# Data Emissão: "+element02.getDataEmissao()+"                  \n"+
+                                   "# Valor do Produto: "+element02.getValorDoProduto()+"           \n"+
+                                   "# Descriçao do Produto: "+element02.getDescricaoDoProduto()+"   \n"+
+				                       "#------------------------------------------------------------\n"+ 
+                                   "# Desconto: "+(valorAtual- percentualGerente)+"                  \n"+ 
+                                   "# Valor Total com desconto: "+element02.getValorDoProduto()+"                  \n"+                                
+                                   "------------------------------------------------------------\n");  
+               
+               } // Exibir Pedidos com o descontoa atulizado
+                    
+
+
+             } else{
+                 Console.WriteLine("\nNão foi possivel aplicar o desconto, por favor realize um novo login!\n\n");
+             } 
          
-                           
+              
+             
+             }
+          
+                                 
           break;
           default:
                Console.Clear();
                Console.WriteLine("\n.\n");
                Console.WriteLine("\n##############################################################\n"+
                                    "#                                                            #\n"+     
-                                   "#               Encerrando programa...                       #\n"+
+                                   "#                  Encerrando programa...                    #\n"+
                                    "#                                                            #\n"+     
                                    "##############################################################\n");  
               aux = false;
               break;
         }//Fim da Estrura do Menu switch
-
-   
-     
+      
   
    }catch (Exception e){
        Console.WriteLine(e.Message);
@@ -124,7 +410,7 @@ try{
 
 }   //Fim do while
 
-}// Fim Main
+}
 static void consultarPedidos(){  
   
   foreach (Pedidos element in listaPedidos){
@@ -298,7 +584,7 @@ while (menu){
           string nomeDoProduto = Console.ReadLine(); 
           Console.Write(" ");
 
-          //Alterar o valor do produto  
+          //Alterar o nome do produto  
           listaPedidos[aux].setnome(nomeDoProduto);
           break;
 
@@ -337,6 +623,18 @@ catch (Exception e){
 
 
 } // Fim da Class
+
+public static float calcularPedido(){
+float aux  = 0; 
+
+for(int i = 0; i < listaPedidos.Count; i++){
+aux = aux + listaPedidos[i].getValorDoProduto();
+}
+
+return aux;
+}
+
+
 public static string dateAtual(){
         string Date = DateTime.Now.ToString("dd-MM-yyyy");
         return Date;
