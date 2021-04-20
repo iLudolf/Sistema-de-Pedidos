@@ -49,4 +49,4 @@ Elabore uma solução computacional para a modelagem proposta. Outros métodos e
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: img/01.jpg
+[product-screenshot]: https://github.com/iLudolf/Sistema-de-Pedidos/blob/main/img/01.JPG
